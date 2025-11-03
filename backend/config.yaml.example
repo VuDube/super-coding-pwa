@@ -1,0 +1,19 @@
+# Example config: copy to backend/config.yaml and add real keys or set env secrets.
+preference:
+  - ollama
+  - huggingface
+  - openrouter
+
+providers:
+  ollama:
+    base: "http://localhost:11434"
+    default_model: "codellama-7b"
+  huggingface:
+    api_key: "YOUR_HUGGINGFACE_API_KEY"
+    default_model: "bigcode/starcoder"
+  openrouter:
+    api_key: "YOUR_OPENROUTER_API_KEY"
+    default_model: "meta-llama-3-8b-instruct"
+  together:
+    endpoint: "https://api.together.ai/v2/some-endpoint"
+    api_key: "YOUR_TOGETHER_API_KEY"
