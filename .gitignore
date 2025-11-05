@@ -1,24 +1,21 @@
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-env/
-*.env
-
-# Node
+# Dependencies
 node_modules/
+.env
+.env.local
+.env.*.local
+
+# Build outputs
 dist/
 build/
+*.pyc
+__pycache__/
 
-# IDE
-.vscode/
+# Editor directories
 .idea/
+.vscode/
+*.swp
+*.swo
 
-# OS
+# OS files
 .DS_Store
-
-# logs
-*.log
-
-# local config
-backend/config.yaml
+Thumbs.db
