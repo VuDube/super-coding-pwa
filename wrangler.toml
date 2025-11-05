@@ -1,0 +1,20 @@
+name = "super-coding-pwa"
+main = "backend/main.py"
+compatibility_date = "2025-11-05"
+
+[build]
+command = "cd web-frontend && npm install && npm run build"
+output_dir = "web-frontend/dist"
+
+[[kv_namespaces]]
+binding = "QUOTA_STORE"
+id = "quota-tracker"
+preview_id = "quota-tracker-preview"
+
+[env.production]
+workers_dev = true
+route = "super-coding-pwa.pages.dev/*"
+zone_id = ""
+
+[env.production.vars]
+ENVIRONMENT = "production"
