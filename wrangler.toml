@@ -1,6 +1,7 @@
 name = "super-coding-pwa"
 main = "backend/main.py"
 compatibility_date = "2025-11-05"
+compatibility_flags = ["python_workers"]
 
 [build]
 command = "cd web-frontend && npm install && npm run build"
