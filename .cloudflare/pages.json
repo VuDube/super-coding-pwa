@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd web-frontend && npm install && npm run build",
+  "outputDirectory": "web-frontend/dist",
+  "nodeVersion": "18",
+  "routes": [
+    { "src": "/api/.*", "dest": "/api/index.js" },
+    { "src": ".*", "dest": "/index.html" }
+  ]
+}
